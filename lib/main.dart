@@ -11,16 +11,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // 1. ĐỔI MaterialApp thành GetMaterialApp
-    // (Để GetX nó có quyền điều khiển việc chuyển trang sau này)
     return GetMaterialApp(
       title: 'Story App Pro',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.pink),
         useMaterial3: true,
       ),
-      home: HomeView(), // 2. Khai báo màn hình mở lên đầu tiên là HomeView
+      home: HomeView(),
     );
   }
 }
